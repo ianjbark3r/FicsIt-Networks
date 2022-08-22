@@ -1,40 +1,31 @@
 = Lua Getting Started
 
 == Introduction
-This section of the documentation tries to slowly introduce you to FicsIt-Networks.
 
-We will begin with basics, continue with some programs interacting with machines
-and end with complex systems utilizing multiple computers.
+The xref:BasicConcept.adoc[Basic Concept] section is designed to get you started quickly with rudimentary information about the systems you'll be using. This section is meant to more slowly introduce you to the mod with a more thorough explanation of how things work.
 
-We highly recommend you to read the https://www.lua.org/pil/1.html[Programming in Lua] Guide of the official Lua WebSite, but we also try to provide useful references in the different sections as we need them.
+We will begin with basics, continue with some programs interacting with machines, and end up looking at complex systems utilizing multiple computers. We highly recommend that you read the https://www.lua.org/pil/1.html[Programming in Lua] Guide of the official Lua website, but we will also try to provide useful references in different sections as we need them.
 
-Please don't be scared just a first sight. +
-Even if you have never programmed before, Lua is a fairly easy programming language
-to learn and specifically designed for it. +
-Programming is a wonderful hobby you can have, yes you will struggle,
-but that only means that when you get a program to work, it will be even more satisfying. +
-Before you toss the mod away as to hard or complex, seriously try it first.
-Never judge a book by its cover.
+*Don't be scared just a first sight!* Even if you have never programmed before, Lua is a fairly easy programming language
+to learn and is specifically designed to be accessible.
+
+Programming is a wonderful hobby to have. Yes you will struggle.
+But that only means that getting your program to work will be even more satisfying.
 
 == Installing the Mod
 To install the mod, you have to download the https://ficsit.app/[Satisfactory Mod Manager].
-Opening the mod manager after installation will directly show you your installed Satisfactory Instances and a list of all available mods.
+Opening the mod manager after installation will show you your installed Satisfactory instances and a list of all available mods.
 There you can search for FicsIt-Networks and install it.
-This will also install the Satisfactory Mod Loader.
-When you now hit `Launch` the game should start with your installed mods.
-You can also visit the https://ficsit.app/mod/FicsItNetworks[FicsIt-Networks Mod Page on the Satisfactory Mod Repository] and hit `install`.
+(This will also install the Satisfactory Mod Loader)
+
+Now when you hit `Launch` at the bottom of the window, the game should start with your installed mods. You can also visit the https://ficsit.app/mod/FicsItNetworks[FicsIt-Networks Mod Page on the Satisfactory Mod Repository] and hit `install`.
 
 == Unlock the Milestones
-Unlocking the Milestones seems simple enough.
-Most unlock able tech is located in the Tier 3 of the HUB. +
-At first, you will only be able to see the `Basics Networks` Unlock.
-After unlocking it, many more unlocks will appear.
-The first unlock will only contain a basic computer and network cables.
-The additional unlocks will contain stuff like buttons, screens, speakers, network cards and much more.
 
-You may notice, the first unlock requires circuit boards and computers
-even tho these are not unlocked till a later tier. +
-This is not a bug, +
-you are supposed to venture out into the world, explore it, and search for crash sites.
-There you often can find circuit boards and computers. +
-You only need one each to be able to unlock the first schematic.
+In order to use the components made available by FicsIt-Networks, you must unlock the appropriate milestones in the HUB. Most unlockable tech is located in Tier 3.
+
+At first, you will only be able to see the `Basics Networks` unlock. After unlocking it, many more will appear. The first unlock will only contain a basic computer and network cables. The additional unlocks will contain stuff like buttons, screens, speakers, network cards and much more.
+
+You may notice that the first unlock requires circuit boards and computers even though these are not unlocked until a later tier. 
+
+This is not a bug. You are supposed to venture out into the world, explore it, and search for crash sites. There you often can find circuit boards and computers. You will only need one each to be able to unlock the first schematic.
