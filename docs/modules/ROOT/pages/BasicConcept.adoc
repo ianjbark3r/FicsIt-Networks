@@ -167,14 +167,20 @@ This is accomplished by using the `component.proxy` function. We can use the fun
 
 But we used the Network Manager to name our Constructor "WireFactory Constructor1", and we'd like to use that nick instead of a long string of random numbers when we search for our component. Fortunately, we can let `component.findComponent` find the GUID for us using our nicks.
 
-`constructor = component.proxy(component.findComponent(
-    "WireFactory Constructor1")[1])`
-
-Is it pretty? No. Is it functional? Yes. 
+`constructorID = component.findComponent("WireFactory Constructor1")[1]`
 
 The function returns an array containing GUIDs of every component in the network whose nick matched the query string. Our query string should only return our one Constructor, so now we just need to reference the first element in the array. We add `[1]` at the end of our `findComponent` function call in order to reference the first item it returns. 
 
 _Note: in Lua, arrays start at one, which is unlike most programming languages._
+
+Now we can feed the variable holding our constructor ID into component.proxy in order to save a reference to the component.
+
+----
+constructorID = component.findComponent("WireFactory Constructor1")[1]
+constructor = component.proxy(constructorID)
+----
+
+Is it pretty? No. Is it functional? Yes. 
 
 ==== Step 2: Using the 'getRecipe' Function
 
@@ -202,14 +208,15 @@ We can call the function in Lua by using a colon after our variable name, like s
 
 `constructor:getRecipe()`
 
-As you can see, we simply referenced the `getRecipe` function by adding a dot to the end of our variable and then calling the function we want! The empty parentheses at the end are used when calling a function with no inputs.
+As you can see, we simply referenced the `getRecipe` function by adding a colon to the end of our variable and then calling the function we want! The empty parentheses at the end are used when calling a function with no inputs.
 
 ==== Step 3: The Script
 
 Now we just need to put this into the Lua programming language to make it useful. It looks something like this:
 
 ----
-constructor = component.proxy(component.findComponent("WireFactory Constructor1")[1])
+constructorID = component.findComponent("WireFactory Constructor1")[1]
+constructor = component.proxy(constructorID)
 currentRecipe = constructor:getRecipe()
 
 print(currentRecipe)
